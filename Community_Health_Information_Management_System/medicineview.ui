@@ -79,14 +79,12 @@
        <property name="columnCount">
         <number>3</number>
        </property>
-       <property name="horizontalHeaderItem">
-        <string>药品名称</string>
-       </property>
-       <property name="horizontalHeaderItem">
-        <string>剂量</string>
-       </property>
-       <property name="horizontalHeaderItem">
-        <string>库存数量</string>
+       <property name="horizontalHeaderLabels">
+       <stringlist>
+            <string>药品名称</string>
+            <string>剂量</string>
+            <string>库存数量</string>
+            </stringlist>
        </property>
       </widget>
      </item>
