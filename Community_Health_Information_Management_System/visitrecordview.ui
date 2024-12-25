@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VisitRecordView</class>
+ <widget class="QWidget" name="VisitRecordView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>就诊记录管理</string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <!-- 输入框布局 -->
+   <item>
+    <layout class="QGridLayout" name="inputLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="lblPatientName">
+       <property name="text">
+        <string>病人姓名：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="editPatientName"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="lblDoctorName">
+       <property name="text">
+        <string>医生姓名：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="editDoctorName"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="lblVisitDate">
+       <property name="text">
+        <string>就诊日期：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QDateEdit" name="editVisitDate"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="lblDiagnosis">
+       <property name="text">
+        <string>诊断结果：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QTextEdit" name="editDiagnosis"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="lblMedicine">
+       <property name="text">
+        <string>开具药品：</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QTextEdit" name="editMedicine"/>
+     </item>
+    </layout>
+   </item>
+   <!-- 按钮布局 -->
+   <item>
+    <layout class="QHBoxLayout" name="buttonLayout">
+     <item>
+      <widget class="QPushButton" name="btnAddRecord">
+       <property name="text">
+        <string>添加记录</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnModifyRecord">
+       <property name="text">
+        <string>修改记录</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnDeleteRecord">
+       <property name="text">
+        <string>删除记录</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnQuery">
+       <property name="text">
+        <string>查询</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnSort">
+       <property name="text">
+        <string>排序</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnFilter">
+       <property name="text">
+        <string>过滤</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnExport">
+       <property name="text">
+        <string>导出</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <!-- 记录显示表格布局 -->
+   <item>
+    <widget class="QTableWidget" name="tableWidgetRecords">
+     <property name="columnCount">
+      <number>5</number>
+     </property>
+     <property name="horizontalHeaderLabels">
+      <stringlist>
+       <string>病人姓名</string>
+       <string>医生姓名</string>
+       <string>就诊日期</string>
+       <string>诊断结果</string>
+       <string>开具药品</string>
+      </stringlist>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
